@@ -3,5 +3,5 @@ export const types = {
     activarChat: '[Chat] Activar Chat',
     nuevoMensaje: '[Chat] Nuevo Mensaje',
     cargarMensajes: '[Chat] Cargar Mensajes',
-    borrarMensajes: '[Chat] Borrar Mensajes'
+    borrarMensajes: '[Chat] Borrar Mensajes',
 }
