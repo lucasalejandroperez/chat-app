@@ -13,7 +13,7 @@ export const Sidebar = () => {
 
         {
           chatState.usuarios
-            .filter(u => u.uid != auth.uid)
+            .filter(u => u.uid !== auth.uid)
             .map((usuario) => (
             <SidebarChatItem 
               key={ usuario.uid } 

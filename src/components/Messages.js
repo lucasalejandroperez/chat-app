@@ -1,8 +1,7 @@
-import React, { useEffect, useLayoutEffect } from 'react';
+import React from 'react';
 import { useContext } from 'react';
 import { AuthContext } from '../auth/AuthContext';
 import { ChatContext } from '../context/chat/ChatContext';
-import { scrollToBottom } from '../helpers/scrollToBottom';
 import { IncomingMessage } from './IncomingMessage';
 import { OutgoingMessage } from './OutgoingMessage';
 import { SendMessage } from './SendMessage';
