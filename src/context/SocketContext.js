@@ -11,7 +11,8 @@ export const SocketContext = createContext();
 
 export const SocketProvider = ({ children }) => {
 
-    const { socket, online, conectarSocket, desconectarSocket } = useSocket('http://localhost:8080');
+    const socketUrl = process.env.REACT_APP_SOCKET_URL;
+    const { socket, online, conectarSocket, desconectarSocket } = useSocket(socketUrl);
     const { auth } = useContext(AuthContext);
     const { dispatch } = useContext(ChatContext);
 
